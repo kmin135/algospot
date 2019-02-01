@@ -68,6 +68,8 @@ public class XHAENEUNG {
 				}
 			}			
 		}
+		
+		sc.close();
 	}
 	
 	private static boolean compareStr(String left, String right) {

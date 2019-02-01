@@ -26,5 +26,7 @@ public class LECTURE {
 			}
 			System.out.println();
 		}
+		
+		sc.close();
 	}
 }

@@ -16,5 +16,7 @@ public class HOTSUMMER {
 			}
 			System.out.println((totalConsume <= threshold) ? "YES" : "NO");
 		}
+		
+		sc.close();
 	}
 }

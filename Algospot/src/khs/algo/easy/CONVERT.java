@@ -15,6 +15,8 @@ public class CONVERT {
 			String unit = sc.next();
 			convert(val, unit);
 		}
+		
+		sc.close();
 	}
 	
 	private static void convert(double targetVal, String unit) {

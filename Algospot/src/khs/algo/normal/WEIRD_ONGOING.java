@@ -1,7 +1,6 @@
 package khs.algo.normal;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -45,5 +44,7 @@ public class WEIRD_ONGOING {
 			}
 			System.out.println();
 		}
+		
+		sc.close();
 	}
 }

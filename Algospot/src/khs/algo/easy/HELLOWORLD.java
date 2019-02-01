@@ -12,5 +12,7 @@ public class HELLOWORLD {
 			String name = sc.next();
 			System.out.println("Hello, " + name + "!");
 		}
+		
+		sc.close();
 	}
 }

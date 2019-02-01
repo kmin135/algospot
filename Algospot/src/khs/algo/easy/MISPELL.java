@@ -21,5 +21,7 @@ public class MISPELL {
 			
 			System.out.println(printIdx++ + " " + (left+right));
 		}
+		
+		sc.close();
 	}
 }

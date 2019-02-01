@@ -34,6 +34,8 @@ public class URI {
 			String decodedURI = decode(encodedURI);
 			System.out.println(decodedURI);
 		}
+		
+		sc.close();
 	}
 	
 	private static String decode(String encodedURI) {

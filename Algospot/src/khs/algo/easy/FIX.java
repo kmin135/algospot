@@ -18,5 +18,7 @@ public class FIX {
 			
 			System.out.println(resultCnt);
 		}
+		
+		sc.close();
 	}
 }

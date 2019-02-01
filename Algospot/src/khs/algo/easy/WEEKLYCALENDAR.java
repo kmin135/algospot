@@ -47,6 +47,8 @@ public class WEEKLYCALENDAR {
 			}
 			System.out.println();
 		}
+		
+		sc.close();
 	}
 	
 	private static int getFinalDayFromMonth(int m) {
