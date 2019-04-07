@@ -20,12 +20,18 @@ public class P6_FESTIVAL {
 			int[] costs = getCosts(br.readLine().split(" "));
 			
 			double minCost = Double.MAX_VALUE;
+			int[] dp = new int[N];
 			for(int s=0;s<=N-L;s++) {
-				for(int e=s+L-1;e<N;e++) {
-					minCost = Math.min(minCost, (double)sum(costs, s, e)/(e-s+1));
+				int endStart = s+L-1;
+				dp[endStart] = sum(costs, s, endStart);
+				for(int e=endStart+1;e<N;e++) {
+					dp[e] = dp[e-1] + costs[e];
+				}
+				for(int e=endStart;e<N;e++) {
+					minCost = Math.min(minCost, (double)dp[e]/(e-s+1));
 				}
 			}
-			System.out.printf("%.12f\n", minCost);
+			System.out.printf("%.8f\n", minCost);
 		}
 	}
 	
